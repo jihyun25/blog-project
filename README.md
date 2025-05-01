@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# 📝 React Firebase Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Firebase 기반 인증, 데이터베이스, 배포를 활용한 개인 블로그 프로젝트입니다.  
+React를 이용한 SPA 구조로, 사용자 친화적인 글 작성 및 관리 기능을 제공합니다.
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+## 🚀 배포 링크
 
-### `npm start`
+🔗 [https://codiary25.web.app](https://codiary25.web.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<br />
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠 사용 기술
 
-### `npm test`
+- **프론트엔드**: HTML, CSS, JavaScript, React (Hooks, Context API)
+- **백엔드/데이터베이스**: Firebase (Authentication, Firestore)
+- **배포**: Firebase Hosting 배포 (.env 설정)
+- **기타 도구**: Git, VSCode
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br />
 
-### `npm run build`
+## ✨ 주요 기능
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔐 사용자 회원가입 / 로그인 (Firebase Authentication)
+- 📝 게시글 CRUD (Firestore 연동)
+- 💬 실시간 댓글 기능 (Subcollection 구조)
+- 🌗 다크모드 (Context API + CSS 변수)
+- 🚀 Firebase Hosting으로 배포
+- 📱 반응형 웹 디자인
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 프로젝트 소개
 
-### `npm run eject`
+React와 Firebase를 기반으로 한 블로그 프로젝트로,  
+프론트엔드 개발자로서 인증, CRUD, 배포까지 전반적인 흐름을 직접 구현해 보았습니다.  
+단순한 디자인보다 기능 구현과 구조화에 집중했습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<br />
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📝 핵심 구현 포인트
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Firebase Authentication을 활용한 사용자 인증 처리
+- Firestore에 게시글 데이터 저장 및 실시간 동기화
+- React Router를 이용한 SPA 방식 페이지 전환
+- 컴포넌트 재사용성과 상태 관리 구조화
+- Firebase Hosting을 통한 배포 및 실서비스 구축 경험
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br />
 
-## Learn More
+## 📁 폴더 구조
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+src/
+├── assets/
+├── components/      # 재사용 가능한 UI 컴포넌트
+├── context/         # Context API 폴더
+├── pages/           # 라우팅되는 주요 페이지
+├── styles/          # 스타일 폴더
+├── types/           # 타입 폴더
+├── App.tsx
+├── firebaseApp.ts
+└── index.tsx
+```
